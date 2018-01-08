@@ -69,7 +69,7 @@ aria2: set for activation
 rescan triggered for activation set on 1 service
 open firewall port 6800 and 8088
 done
-然后在控制页面打开一下aria2,提交这下 Aria2 终于跑起来了，开始装浏览器插件。我用的是 Chrome 浏览器，然而它的百度云盘插件已经下架，于是只能找到它的源码（https://github.com/acgotaku/BaiduExporter），直接下载下来并解压。再用 Chrome 的「加载已解压的扩展程序」功能打开其中的「Chrome」文件夹，浏览器插件就装好了。
+然后在控制页面打开一下aria2,提交这下 Aria2 终于跑起来了，开始装浏览器插件。我用的是 Chrome 浏览器，然而它的百度云盘插件已经下架，于是只能找到它的源码（https://github.com/acgotaku/BaiduExporter），直接下载下来并解压。再拖入Chrome 的「扩展程序」，浏览器插件就装好了。
 然后打开自己的百度云网盘，会看见一个新的「导出下载」菜单。选择其中的设置按钮，把「ARIA2 RPC」修改为 http://token:密码@路由器IP地址:6800/jsonrpc（假设密码是「abc」，IP 是 「192.168.1.1」，则填入「http://token:abc@192.168.1.1:6800/jsonrpc」）。测试下能否连上即可。
 想下载文件时，只需保存到自己的网盘，然后点「导出下载」-「ARIA2 RPC」就会自动下载了。
 
