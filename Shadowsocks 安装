@@ -1,0 +1,5 @@
+ 如果提示检测到离线安装包名有非法关键词，开启路由器的SSH功能，putty登录并输入以下命令后，再进行离线安装。
+
+sed -i 's/\tdetect_package/\t# detect_package/g' /koolshare/scripts/ks_tar_install.sh
+
+https://github.com/hq450/fancyss_history_package/tree/master/fancyss_arm384
